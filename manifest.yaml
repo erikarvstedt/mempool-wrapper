@@ -246,7 +246,7 @@ migrations:
         type: docker
         image: main
         entrypoint: sh
-        args: ["-c", 'json=''{"configured": true }'' && echo "$json"']
+        args: ["-c", 'json=''{"configured": false }'' && echo "$json"']
         io-format: json
         inject: true
   to:
@@ -254,6 +254,6 @@ migrations:
         type: docker
         image: main
         entrypoint: sh
-        args: ["-c", 'json=''{"configured": true }'' && echo "$json"']
+        args: ["-c", 'json=''{"configured": false }'' && echo "$json"']
         io-format: json
         inject: true
